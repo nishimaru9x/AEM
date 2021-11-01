@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/tuannt49" mode="merge"/>
+    <filter root="/content/tuannt49" mode="merge"/>
+    <filter root="/content/dam/tuannt49" mode="merge"/>
+    <filter root="/content/experience-fragments/tuannt49" mode="merge"/>
+</workspaceFilter>
