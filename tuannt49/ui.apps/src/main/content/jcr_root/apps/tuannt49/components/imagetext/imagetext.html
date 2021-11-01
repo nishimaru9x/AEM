@@ -1,0 +1,10 @@
+<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" class="cmp-imagetext">
+    <div class="cmp-imagetext__image">
+        <img src="${properties.fileReference}" alt="" srcset="">
+    </div>
+    <h2 class="cmp-herobanner__title">${properties.title}</h2>
+    <p class="cmp-herobanner__subtitle">${properties.subtitle}</p>
+    <a href="${properties.linkURL}.html" target="_self"
+        class="btn btn-main-reserve cmp-properties__button">${properties.label}</a>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=false}"></sly>

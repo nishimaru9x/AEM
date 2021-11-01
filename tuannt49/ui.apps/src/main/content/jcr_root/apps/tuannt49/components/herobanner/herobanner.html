@@ -1,3 +1,12 @@
-<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+<div data-sly-use.herobanner="com.adobe.aem.mock.tuannt49.core.models.HeroBanner"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${!herobanner.empty}" class="cmp-herobanner">
+    <div class="cmp-herobanner__image">
+        <img src="${herobanner.fileReference}" alt="" srcset="">
+    </div>
+    <h2 class="cmp-herobanner__title">${herobanner.title}</h2>
+    <p class="cmp-herobanner__subtitle">${herobanner.subtitle}</p>
+    <a href="${herobanner.linkURL}.html" target="${herobanner.newTab}"
+        class="btn btn-main-reserve cmp-herobanner__button">${herobanner.label}</a>
 </div>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
