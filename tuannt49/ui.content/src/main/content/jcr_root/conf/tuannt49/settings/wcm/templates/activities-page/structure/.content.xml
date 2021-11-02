@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/tuannt49/settings/wcm/templates/page-content"
+        cq:template="/conf/tuannt49/settings/wcm/templates/activities-page"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="tuannt49/components/structure/activitiespagecomponent">
         <root

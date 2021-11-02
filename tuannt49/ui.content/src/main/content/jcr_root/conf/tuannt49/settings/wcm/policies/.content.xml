@@ -338,6 +338,7 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <activities jcr:primaryType="nt:unstructured"/>
         </components>
     </tuannt49>
     <rep:policy/>
