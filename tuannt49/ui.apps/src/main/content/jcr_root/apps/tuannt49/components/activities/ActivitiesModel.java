@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.adobe.cq.sightly.WCMUsePojo;
+import com.day.cq.search.result.SearchResult;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
@@ -21,16 +22,14 @@ public class ActivitiesModel extends WCMUsePojo {
     // Initializes the navigation
     @Override
     public void activate() throws Exception {
-        rootPage = getCurrentPage();
+        SearchResult rootPage = getCurrentPage();
         pageManager = getPageManager();
-        
-        LOGGER.info("============PRINTING LOG=============");
-        // LOGGER.info(pageManager);
 
+        // LOGGER.info(pageManager);
+        LOGGER.info("=================Logging==============");
         Iterator<Page> childPages = rootPage.listChildren(null, false);
         while (childPages.hasNext()) {
             Page child = childPages.next();
-            LOGGER.info("child pages " + child.getTemplate().getName());
             items.add(child);
         }
 

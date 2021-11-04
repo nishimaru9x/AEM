@@ -5,10 +5,8 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="adefaa62-ee47-415a-ab6b-e394c690b223">
     <jcr:content
-        cq:name="cq5dam.web.1280.1280.jpeg"
-        cq:parentPath="/content/dam/tuannt49"
         dam:assetState="processed"
-        jcr:lastModified="{Date}2021-11-03T16:42:13.604+07:00"
+        jcr:lastModified="{Date}2021-11-04T17:31:21.041+07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -27,8 +25,6 @@
             dam:size="{Long}279537"
             dc:format="image/jpeg"
             dc:modified="{Date}2021-11-03T16:42:12.940+07:00"
-            jcr:lastModified="{Date}2021-11-03T16:42:12.939+07:00"
-            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}515"
