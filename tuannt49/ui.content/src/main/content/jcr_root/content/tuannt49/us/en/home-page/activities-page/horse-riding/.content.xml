@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-11-03T13:46:52.377+07:00"
+        cq:lastModified="{Date}2021-11-05T09:39:08.698+07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/tuannt49/settings/wcm/templates/activity-detail-page"
         jcr:lastModified="{Date}2021-11-03T10:40:39.151+07:00"
@@ -12,7 +12,7 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Horse Riding"
         sling:resourceType="tuannt49/components/structure/activitydetailpagecomponent"
-        image="/content/dam/tuannt49/asset.jpg"
+        image="/content/dam/tuannt49/cq5dam.web.1280.1280(1).jpeg"
         siteName="Name: Horse Riding"
         siteTitle="Title: Horse Riding">
         <root

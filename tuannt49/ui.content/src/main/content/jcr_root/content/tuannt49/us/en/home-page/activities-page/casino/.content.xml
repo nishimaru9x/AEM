@@ -5,12 +5,13 @@
         cq:conf="/conf/tuannt49"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-11-03T13:47:43.886+07:00"
+        cq:lastModified="{Date}2021-11-05T09:38:14.064+07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/tuannt49/settings/wcm/templates/activity-detail-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Casino"
         sling:resourceType="tuannt49/components/structure/activitydetailpagecomponent"
+        image="/content/dam/tuannt49/cq5dam.web.1280.1280(2).jpeg"
         siteName="Casino"
         siteTitle="Casino">
         <root
