@@ -1,8 +1,9 @@
-<div data-sly-use.model="ActivitiesModel" class="cmp-activities" data-cmp-is="activities">
-
-    <h2 class="cmp-activities__title">${pageProperties.siteTitle}</h2>
-    <h2 class="cmp-activities__title">${pageProperties.siteName}</h2>
-    <h2 class="cmp-activities__title" data-sly-test="${pageProperties.siteDescription}">
-        ${pageProperties.siteDescription}</h2>
-    <img src="${pageProperties.image}" alt="" srcset="">
+<div data-sly-use.model="com.adobe.aem.mock.tuannt49.core.models.ActivitiesModel" class="cmp-activities"
+    data-cmp-is="activities">
+    <div class="" data-sly-list="${model.items}">
+        <h2>${item.properties.siteTitle}</h2>
+        <h2>${item.properties.siteName}</h2>
+        <img src="${item.properties.image}" alt="" srcset="">
+        <a href="${item.path}.html" target="_blank" rel="noopener noreferrer">Link</a>
+    </div>
 </div>
