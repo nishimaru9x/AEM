@@ -12,7 +12,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 @Model(adaptables = { SlingHttpServletRequest.class }, adapters = { HeroBanner.class }, resourceType = {
         HeroBannerImpl.RESOUCE_TYPE }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeroBannerImpl implements HeroBanner {
-    protected static final String RESOUCE_TYPE = "tuannt49/components/content/herobanner";
+    protected static final String RESOUCE_TYPE = "tuannt49/components/herobanner";
 
     @Self
     private SlingHttpServletRequest request;
