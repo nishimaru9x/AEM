@@ -38,7 +38,6 @@ public class SearchPageImpl implements SearchPage {
 
     @Activate
     public void activate() {
-        LOGGER.info("------ACTIVATE METHOD-------");
     }
 
     public Map<String, String> createTemplateSearchQuery(String template, int startPage, int resultNumbers) {
@@ -54,7 +53,6 @@ public class SearchPageImpl implements SearchPage {
 
     @Override
     public List<Page> searchByTemplate(String template, int pageStart, int resultPerPage) {
-        LOGGER.info("--------START SEARCH---------");
         List<Page> pages = new ArrayList<>();
         try {
             ResourceResolver resolver = resolverFactory.getServiceResourceResolver(new HashMap<String, Object>() {
@@ -63,15 +61,12 @@ public class SearchPageImpl implements SearchPage {
                 }
             });
             Session session = resolver.adaptTo(Session.class);
-            LOGGER.info("--------BEGIN QUERY---------");
             Query query = queryBuilder.createQuery(
                     PredicateGroup.create(createTemplateSearchQuery(template, pageStart, resultPerPage)), session);
             SearchResult result = query.getResult();
             List<Hit> hits = result.getHits();
-            LOGGER.info("--------RESULT--------- {}", hits.size());
             for (Hit hit : hits) {
                 Page page = hit.getResource().adaptTo(Page.class);
-                LOGGER.info("=====INSIDE PAGES======\n{}", page.getPath());
                 pages.add(page);
             }
 

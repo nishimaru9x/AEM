@@ -64,7 +64,6 @@ public class MyBreadcrumbImpl implements MyBreadcrumb {
         int currentLevel = currentPage.getDepth();
         while (startLevel < currentLevel) {
             Page page = currentPage.getAbsoluteParent(startLevel);
-            LOGGER.info("Current Page: {}", page.getName());
             items.add(page);
             startLevel++;
         }

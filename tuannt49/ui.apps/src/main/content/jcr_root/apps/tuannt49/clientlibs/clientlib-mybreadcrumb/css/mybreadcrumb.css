@@ -1,6 +1,45 @@
-#breadcrumb {
+.breadcrumb {
     padding: 10px 0 5px;
     text-transform: uppercase;
     color: #404040;
     font-size: 1.2rem;
+}
+
+li, p, ul {
+    margin: 0;
+    margin-right: 0px;
+}
+
+li, ul {
+    padding: 0;
+}
+
+#breadcrumb .inner {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+menu, ol, ul {
+    list-style: none;
+}
+
+a, body {
+    color: #231f20;
+}
+
+#breadcrumb .last-item {
+    color: #a57b1b;
+}
+
+#breadcrumb .list-item {
+    line-height: 1.5;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+#breadcrumb .list-item::before {
+    content: ">";
+    width: 4px;
+    height: 6px;
+    margin-right: 4px;
 }

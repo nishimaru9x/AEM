@@ -3,5 +3,5 @@
     jcr:description="Activity Detail Page Component"
     jcr:primaryType="cq:Component"
     jcr:title="Activity Detail Page Component"
-    sling:resourceSuperType="core/wcm/components/page/v2/page"
+    sling:resourceSuperType="tuannt49/components/structure/homepagecomponent"
     componentGroup=".hidden"/>

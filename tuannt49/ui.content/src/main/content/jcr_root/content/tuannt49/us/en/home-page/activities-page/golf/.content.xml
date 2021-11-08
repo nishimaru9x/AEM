@@ -5,7 +5,7 @@
         cq:conf="/conf/tuannt49"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-11-05T09:38:43.415+07:00"
+        cq:lastModified="{Date}2021-11-08T21:00:18.037+07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/tuannt49/settings/wcm/templates/activity-detail-page"
         jcr:lastModified="{Date}2021-11-03T10:37:34.165+07:00"
@@ -14,6 +14,7 @@
         jcr:title="Golf"
         sling:resourceType="tuannt49/components/structure/activitydetailpagecomponent"
         fileName="cq5dam.web.1280.1280.jpeg"
+        iconType="golf"
         image="/content/dam/tuannt49/cq5dam.web.1280.1280.jpeg"
         siteName="Golf"
         siteTitle="Golf">
@@ -32,6 +33,17 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="tuannt49/components/container"
                     layout="responsiveGrid">
+                    <mybreadcrumb
+                        jcr:created="{Date}2021-11-08T16:31:49.858+07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-11-08T17:44:21.561+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="tuannt49/components/mybreadcrumb"
+                        disableShadowing="false"
+                        hideCurrent="false"
+                        showHidden="false"
+                        startLevel="4"/>
                     <activities
                         jcr:created="{Date}2021-11-03T10:50:52.962+07:00"
                         jcr:createdBy="admin"
