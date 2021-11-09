@@ -4,7 +4,8 @@
     <div class="inner">
         <div class="inner-medium">
             <ol data-sly-list.navItem="${breadcrumb.items}" itemscope itemtype="http://schema.org/BreadcrumbList">
-                <li class="list-item" itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+                <li class="list-item ${navItem.title == pageProperties.jcr:title ? 'last-item' : ''}" itemscope
+                    itemtype="http://schema.org/ListItem" itemprop="itemListElement">
                     <a href="${navItem.path}.html"
                         data-sly-unwrap="${navItem.title == pageProperties.jcr:title ? true : false}" itemprop="item">
                         ${navItem.title}</a>

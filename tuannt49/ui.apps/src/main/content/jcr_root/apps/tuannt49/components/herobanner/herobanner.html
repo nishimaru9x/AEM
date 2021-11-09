@@ -1,12 +1,25 @@
 <div data-sly-use.herobanner="com.adobe.aem.mock.tuannt49.core.models.HeroBanner"
     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-    data-sly-test.hasContent="${!herobanner.empty}" class="cmp-herobanner">
-    <div class="cmp-herobanner__image">
-        <img src="${herobanner.fileReference}" alt="" srcset="">
+    data-sly-test.hasContent="${!herobanner.empty}" class="block-hotel-cover">
+    <div class="block-hotel-cover-visual">
+        <picture data-alt="" data-default-src="${herobanner.fileReference}">
+            <source media="(min-width: 1023px)" srcset="${herobanner.fileReference}" />
+            <source media="(min-width: 768px)" srcset="${herobanner.fileReference}" />
+            <source media="(min-width: 319px)" srcset="${herobanner.fileReference}" />
+            <img src="${herobanner.fileReference}" alt="" />
+        </picture>
     </div>
-    <h2 class="cmp-herobanner__title">${herobanner.title}</h2>
-    <p class="cmp-herobanner__subtitle">${herobanner.subtitle}</p>
-    <a href="${herobanner.linkURL}.html" target="${herobanner.newTab}"
-        class="btn btn-main-reserve cmp-herobanner__button">${herobanner.label}</a>
+    <div class="pattern"></div>
+    <div class="block-item-vam">
+        <div class="block-vam">
+            <div class="block-vam-col">
+                <h2 class="title">${herobanner.title}</h2>
+                <p class="subtitle">${herobanner.subtitle}</p>
+                <a class="btn btn-main-reverse" href="${herobanner.linkURL}.html" target="${herobanner.newTab}"
+                    rel="noopener">
+                    ${herobanner.label}</a>
+            </div>
+        </div>
+    </div>
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
