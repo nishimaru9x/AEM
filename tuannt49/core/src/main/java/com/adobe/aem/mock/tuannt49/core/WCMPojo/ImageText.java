@@ -3,6 +3,7 @@ package com.adobe.aem.mock.tuannt49.core.WCMPojo;
 import com.adobe.cq.sightly.WCMUsePojo;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.sling.api.resource.ValueMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,13 +21,13 @@ public class ImageText extends WCMUsePojo {
 
     @Override
     public void activate() throws Exception {
-        title = getProperties().get("title", "");
-        subtitle = getProperties().get("subtitle", "");
-        description = getProperties().get("description", "");
-        label = getProperties().get("label", "");
-        linkURL = getProperties().get("linkURL", "");
-        fileReference = getProperties().get("fileReference", "");
-        LOGGER.info("\n{}\n{}\n{}\n{}\n{}\n{}", title, subtitle, description, label, linkURL, fileReference);
+        ValueMap properties = getProperties();
+        title = properties.get("title", String.class);
+        subtitle = properties.get("subtitle", String.class);
+        description = properties.get("description", String.class);
+        label = properties.get("label", String.class);
+        linkURL = properties.get("linkURL", String.class);
+        fileReference = properties.get("fileReference", String.class);
     }
 
     /**

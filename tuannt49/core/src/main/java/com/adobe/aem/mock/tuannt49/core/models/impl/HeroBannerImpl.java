@@ -8,10 +8,14 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Model(adaptables = { SlingHttpServletRequest.class }, adapters = { HeroBanner.class }, resourceType = {
         HeroBannerImpl.RESOUCE_TYPE }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeroBannerImpl implements HeroBanner {
+    private static final Logger LOGGER = LoggerFactory.getLogger(HeroBannerImpl.class);
+
     protected static final String RESOUCE_TYPE = "tuannt49/components/herobanner";
     private final String LABEL_DISCOVER = "Discover";
 
@@ -63,14 +67,7 @@ public class HeroBannerImpl implements HeroBanner {
 
     @Override
     public Boolean isEmpty() {
-        if (StringUtils.isBlank(title)) {
-            return true;
-        } else if (StringUtils.isBlank(fileReference)) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return StringUtils.isBlank(title) || StringUtils.isBlank(fileReference) || StringUtils.isBlank(linkURL);
     }
 
     @Override

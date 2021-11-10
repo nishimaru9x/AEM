@@ -1,6 +1,7 @@
 package com.adobe.aem.mock.tuannt49.core.models.impl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.adobe.aem.mock.tuannt49.core.models.HeroBanner;
@@ -81,9 +82,51 @@ public class HeroBannerImplTest {
     }
 
     @Test
+    void testIsEmptyFalse() {
+        context.currentResource("/content/herobanner");
+        HeroBanner heroBanner = context.request().adaptTo(HeroBanner.class);
+
+        assertFalse(heroBanner.isEmpty());
+    }
+
+    @Test
+    void testIsEmptyWithoutTitle() {
+        context.currentResource("/content/without-title");
+        HeroBanner heroBanner = context.request().adaptTo(HeroBanner.class);
+
+        assertTrue(heroBanner.isEmpty());
+    }
+
+    @Test
+    void testIsEmptyWithoutFileReference() {
+        context.currentResource("/content/without-filereference");
+        HeroBanner heroBanner = context.request().adaptTo(HeroBanner.class);
+
+        assertTrue(heroBanner.isEmpty());
+    }
+
+    @Test
+    void testIsEmptyWithoutLinkURL() {
+        context.currentResource("/content/without-linkURL");
+        HeroBanner heroBanner = context.request().adaptTo(HeroBanner.class);
+
+        assertTrue(heroBanner.isEmpty());
+    }
+
+    @Test
     void testIsNewTab() {
         final String expected = "_blank";
         context.currentResource("/content/herobanner");
+        HeroBanner heroBanner = context.request().adaptTo(HeroBanner.class);
+
+        String actual = heroBanner.isNewTab();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void testIsNewTabFalse() {
+        final String expected = "_self";
+        context.currentResource("/content/newtab-false");
         HeroBanner heroBanner = context.request().adaptTo(HeroBanner.class);
 
         String actual = heroBanner.isNewTab();

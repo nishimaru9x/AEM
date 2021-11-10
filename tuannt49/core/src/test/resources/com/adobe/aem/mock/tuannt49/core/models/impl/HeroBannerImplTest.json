@@ -12,5 +12,42 @@
     "empty":{
         "jcr:primaryType":"nt:unstructured",
         "sling:resourceTye":"tuannt49/components/herobanner"
+    },
+    "without-title":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceTye":"tuannt49/components/herobanner",
+        "fileReference":"some/link/to/file.jpg",
+        "linkURL":"link/to/URL",
+        "label":"Label here",
+        "subtitle":"Subtitle here",
+        "newTab":"_blank"
+    },
+    "without-filereference":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceTye":"tuannt49/components/herobanner",
+        "linkURL":"link/to/URL",
+        "label":"Label here",
+        "subtitle":"Subtitle here",
+        "title":"Title here",
+        "newTab":"_blank"
+    },
+    "without-linkURL":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceTye":"tuannt49/components/herobanner",
+        "fileReference":"some/link/to/file.jpg",
+        "label":"Label here",
+        "subtitle":"Subtitle here",
+        "title":"Title here",
+        "newTab":"_blank"
+    },
+    "newtab-false":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceTye":"tuannt49/components/herobanner",
+        "fileReference":"some/link/to/file.jpg",
+        "linkURL":"link/to/URL",
+        "label":"Label here",
+        "subtitle":"Subtitle here",
+        "title":"Title here",
+        "newTab":"_self"
     }
 }
