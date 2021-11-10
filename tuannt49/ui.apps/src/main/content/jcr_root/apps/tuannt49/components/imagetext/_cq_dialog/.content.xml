@@ -81,7 +81,7 @@
                                                     emptyText="Enter Subtitle to display."
                                                     fieldLabel="Subtitle"
                                                     name="./subtitle"
-                                                    required="{Boolean}false" />
+                                                    required="{Boolean}true" />
                                             <description
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -97,7 +97,7 @@
                                                     <label
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                            emptyText="Enter Label to display."
+                                                            emptyText="Enter Label to display, default Discover."
                                                             fieldLabel="Label"
                                                             name="./label"
                                                             required="{Boolean}false" />
@@ -107,6 +107,7 @@
                                                             fieldDescription="Make the image a link to another resource."
                                                             fieldLabel="Link"
                                                             name="./linkURL"
+                                                            required="{Boolean}true"
                                                             rootPath="/content/tuannt49" />
                                                 </items>
                                             </fieldset>

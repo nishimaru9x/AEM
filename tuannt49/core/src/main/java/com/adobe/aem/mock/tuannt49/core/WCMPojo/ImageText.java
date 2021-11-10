@@ -1,4 +1,4 @@
-package apps.tuannt49.components.imagetext;
+package com.adobe.aem.mock.tuannt49.core.WCMPojo;
 
 import com.adobe.cq.sightly.WCMUsePojo;
 
@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 public class ImageText extends WCMUsePojo {
     private static final Logger LOGGER = LoggerFactory.getLogger(ImageText.class);
+    private final String LABEL_DISCOVER = "Discover";
 
     private String title;
     private String subtitle;
@@ -53,7 +54,7 @@ public class ImageText extends WCMUsePojo {
      * @return the label
      */
     public String getLabel() {
-        return label;
+        return StringUtils.isNotBlank(label) ? label : LABEL_DISCOVER;
     }
 
     /**
@@ -71,8 +72,7 @@ public class ImageText extends WCMUsePojo {
     }
 
     public boolean isActive() {
-        return StringUtils.isNotBlank(title) && StringUtils.isNotBlank(subtitle) && StringUtils.isNotBlank(label)
-                && StringUtils.isNotBlank(linkURL) && StringUtils.isNotBlank(description)
+        return StringUtils.isNotBlank(title) && StringUtils.isNotBlank(subtitle) && StringUtils.isNotBlank(linkURL)
                 && StringUtils.isNotBlank(fileReference);
     }
 }

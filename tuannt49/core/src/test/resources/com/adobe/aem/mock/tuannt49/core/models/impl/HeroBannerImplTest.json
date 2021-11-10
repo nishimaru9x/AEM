@@ -1,0 +1,16 @@
+{
+    "herobanner":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceTye":"tuannt49/components/herobanner",
+        "fileReference":"some/link/to/file.jpg",
+        "linkURL":"link/to/URL",
+        "label":"Label here",
+        "subtitle":"Subtitle here",
+        "title":"Title here",
+        "newTab":"_blank"
+    },
+    "empty":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceTye":"tuannt49/components/herobanner"
+    }
+}

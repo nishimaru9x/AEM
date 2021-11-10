@@ -13,6 +13,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
         HeroBannerImpl.RESOUCE_TYPE }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeroBannerImpl implements HeroBanner {
     protected static final String RESOUCE_TYPE = "tuannt49/components/herobanner";
+    private final String LABEL_DISCOVER = "Discover";
 
     @Self
     private SlingHttpServletRequest request;
@@ -47,7 +48,7 @@ public class HeroBannerImpl implements HeroBanner {
 
     @Override
     public String getLabel() {
-        return label;
+        return StringUtils.isNotBlank(label) ? label : LABEL_DISCOVER;
     }
 
     @Override
