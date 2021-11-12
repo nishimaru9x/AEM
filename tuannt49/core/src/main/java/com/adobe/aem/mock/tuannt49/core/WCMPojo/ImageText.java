@@ -12,7 +12,6 @@ public class ImageText extends WCMUsePojo {
     private final String LABEL_DISCOVER = "Discover";
 
     private String title;
-    private String subtitle;
     private String description;
 
     private String label;
@@ -23,7 +22,6 @@ public class ImageText extends WCMUsePojo {
     public void activate() throws Exception {
         ValueMap properties = getProperties();
         title = properties.get("title", String.class);
-        subtitle = properties.get("subtitle", String.class);
         description = properties.get("description", String.class);
         label = properties.get("label", String.class);
         linkURL = properties.get("linkURL", String.class);
@@ -35,13 +33,6 @@ public class ImageText extends WCMUsePojo {
      */
     public String getTitle() {
         return title;
-    }
-
-    /**
-     * @return the subtitle
-     */
-    public String getSubtitle() {
-        return subtitle;
     }
 
     /**
@@ -73,7 +64,7 @@ public class ImageText extends WCMUsePojo {
     }
 
     public boolean isActive() {
-        return StringUtils.isNotBlank(title) && StringUtils.isNotBlank(subtitle) && StringUtils.isNotBlank(linkURL)
+        return StringUtils.isNotBlank(title) && StringUtils.isNotBlank(linkURL)
                 && StringUtils.isNotBlank(fileReference);
     }
 }

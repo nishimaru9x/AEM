@@ -1,11 +1,42 @@
 {
-    "jcr:primaryType": "nt:unstructured",
-    "jcr:createdBy": "admin",
-    "jcr:lastModifiedBy": "admin",
-    "jcr:created": "Tue Jul 21 2020 09:13:24 GMT-0400",
-    "pagePath": "/content/learnings",
-    "description": "description",
-    "pageTitle": "Sample Title from dialog",
-    "jcr:lastModified": "Tue Jul 21 2020 10:18:09 GMT-0400",
-    "sling:resourceType": "learnings/components/content/samplewcmusepojo"
+    "imageText": {
+        "description": "description",
+        "fileReference": "fileReference",
+        "label": "label",
+        "linkURL": "linkURL",
+        "subtitle": "subtitle",
+        "title": "Title"
+    },
+    "without-label": {
+        "description": "description",
+        "fileReference": "fileReference"
+    },
+    "without-title": {
+        "description": "description",
+        "fileReference": "fileReference",
+        "label": "label",
+        "linkURL": "linkURL",
+        "subtitle": "subtitle"
+    },
+    "without-subtitle": {
+        "description": "description",
+        "fileReference": "fileReference",
+        "label": "label",
+        "linkURL": "linkURL",
+        "title": "Title"
+    },
+    "without-linkURL": {
+        "description": "description",
+        "fileReference": "fileReference",
+        "label": "label",
+        "subtitle": "subtitle",
+        "title": "Title"
+    },
+    "without-filereference": {
+        "description": "description",
+        "label": "label",
+        "linkURL": "linkURL",
+        "subtitle": "subtitle",
+        "title": "Title"
+    }
 }

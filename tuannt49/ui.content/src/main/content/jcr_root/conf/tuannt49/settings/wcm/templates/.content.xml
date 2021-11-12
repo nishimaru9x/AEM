@@ -4,8 +4,8 @@
     jcr:primaryType="cq:Page">
     <page-content/>
     <xf-web-variation/>
-    <rep:policy/>
     <home-page/>
     <activities-page/>
     <activity-detail-page/>
+    <rep:policy/>
 </jcr:root>

@@ -1,29 +1,25 @@
-<div data-sly-use.imageText="${'com.adobe.aem.mock.tuannt49.core.WCMPojo.ImageText'}"
-    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" data-sly-test="${imageText.active}"
-    class="slider-wrapper">
-    <div class="home-carousel owl-slider carousel owl-carousel owl-theme owl-loaded" data-dot="true">
-        <div class="owl-stage-outer">
-            <div class="owl-stage">
-                <div class="cloned">
-                    <a data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-                        href="${imageText.linkURL}.html" class="slide-item">
-                        <div class="block-vam block-reverse-tablet">
-                            <div class="card-hotel-container block-vam-col">
-                                <div class="block-wrapper">
-                                    <div class="card-hotel-item">
-                                        <h3 class="chi-hotel-city">${imageText.title}</h3>
-                                        <p class="chi-hotel-region">${imageText.subtitle}</p>
-                                    </div>
-                                    <p class="description">${imageText.description}</p>
-                                    <span class="btn btn-main-reverse">${imageText.label}</span>
-                                </div>
-                            </div>
-                            <div class="bloc-picture reverse block-vam-col">
-                                <img src="${imageText.fileReference}" alt="Hôtel Barrière Lille - Frontage - Exterior ">
-                            </div>
-                        </div>
-                    </a>
-                </div>
+<div class="module m39-1 m-popin-gallery">
+    <div data-sly-use.imageText="${'com.adobe.aem.mock.tuannt49.core.WCMPojo.ImageText'}"
+        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+        data-sly-test="${imageText.active}" class="block-desire inner-medium block-vam m-popin-gallery">
+        <div class="block-vam-col block-w1">
+            <div class="bloc-description">
+                <h2 class="title-name"><a href="${imageText.linkURL}.html">${imageText.title}</a></h2>
+                <p class="description"><a href="${imageText.linkURL}.html">${imageText.description}</a></p>
+                <ul>
+                    <li class="list-item cta">
+                        <a href="${imageText.linkURL}.html">
+                            ${imageText.label}<i class="icon-arrow"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-vam-col block-w2">
+            <div class="bloc-picture">
+                <a href="${imageText.linkURL}.html" title="Preferential rates as soon as you join">
+                    <img src="${imageText.fileReference}" alt="" />
+                </a>
             </div>
         </div>
     </div>

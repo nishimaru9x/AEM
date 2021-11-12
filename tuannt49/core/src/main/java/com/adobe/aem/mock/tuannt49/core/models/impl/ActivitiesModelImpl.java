@@ -18,6 +18,9 @@ import org.slf4j.LoggerFactory;
         ActivitiesModelImpl.RESOUCE_TYPE }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class ActivitiesModelImpl implements ActivitiesModel {
     protected static final String RESOUCE_TYPE = "tuannt49/components/activities";
+    private static final String ACTIVITY_DETAIL_TEMPLATE = "activity-detail-page";
+    private static final int MAX_RESULT = 6;
+
     private List<Page> items = new ArrayList<Page>();
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ActivitiesModelImpl.class);
@@ -28,7 +31,7 @@ public class ActivitiesModelImpl implements ActivitiesModel {
     @Override
     public List<Page> getItems() {
         LOGGER.info("List pages");
-        items = searchPage.searchByTemplate("activity-detail-page", 0, 6);
+        items = searchPage.searchByTemplate(ACTIVITY_DETAIL_TEMPLATE, 0, MAX_RESULT);
         return items;
     }
 
