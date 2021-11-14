@@ -45,7 +45,7 @@ public class MyBreadcrumbImpl implements MyBreadcrumb {
     private List<Page> items;
 
     @PostConstruct
-    private void initModel() {
+    protected void initModel() {
         startLevel = properties.get(START_LEVEL, currentStyle.get(START_LEVEL, START_LEVEL_DEFAULT));
         hideCurrent = properties.get(HIDE_CURRENT, currentStyle.get(HIDE_CURRENT, HIDE_CURRENT_DEFAULT));
     }
