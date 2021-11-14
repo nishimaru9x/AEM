@@ -238,12 +238,12 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2021-11-12T09:24:48.197+07:00"
+                    jcr:lastModified="{Date}2021-11-15T00:22:51.867+07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Content"
+                    jcr:title="Activities Container"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/tuannt49/components/accordion,/apps/tuannt49/components/breadcrumb,/apps/tuannt49/components/button,/apps/tuannt49/components/carousel,/apps/tuannt49/components/container,/apps/tuannt49/components/contentfragment,/apps/tuannt49/components/contentfragmentlist,/apps/tuannt49/components/download,/apps/tuannt49/components/experiencefragment,/apps/tuannt49/components/helloworld,/apps/tuannt49/components/herobanner,/apps/tuannt49/components/image,/apps/tuannt49/components/imagetext,/apps/tuannt49/components/list,/apps/tuannt49/components/mybreadcrumb,/apps/tuannt49/components/separator,/apps/tuannt49/components/sharing,/apps/tuannt49/components/tabs,/apps/tuannt49/components/teaser,/apps/tuannt49/components/text,/apps/tuannt49/components/title]">
+                    components="[/apps/tuannt49/components/activities]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -306,6 +306,24 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_1636910642640
+                    jcr:lastModified="{Date}2021-11-15T00:24:56.867+07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title=" Exclude Activities Component"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/tuannt49/components/accordion,/apps/tuannt49/components/breadcrumb,/apps/tuannt49/components/button,/apps/tuannt49/components/carousel,/apps/tuannt49/components/container,/apps/tuannt49/components/contentfragment,/apps/tuannt49/components/contentfragmentlist,/apps/tuannt49/components/download,/apps/tuannt49/components/experiencefragment,/apps/tuannt49/components/helloworld,/apps/tuannt49/components/herobanner,/apps/tuannt49/components/image,/apps/tuannt49/components/imagetext,/apps/tuannt49/components/list,/apps/tuannt49/components/mybreadcrumb,/apps/tuannt49/components/separator,/apps/tuannt49/components/sharing,/apps/tuannt49/components/tabs,/apps/tuannt49/components/teaser,/apps/tuannt49/components/text,/apps/tuannt49/components/title]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1636910642640>
+                <policy_1636910771776
+                    jcr:lastModified="{Date}2021-11-15T00:26:32.370+07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Image Text Container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="/apps/tuannt49/components/imagetext">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1636910771776>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650

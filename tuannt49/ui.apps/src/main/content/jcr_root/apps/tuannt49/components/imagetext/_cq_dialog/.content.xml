@@ -63,13 +63,6 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <subtitle
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                emptyText="Enter Subtitle to display."
-                                                fieldLabel="Subtitle"
-                                                name="./subtitle"
-                                                required="{Boolean}true"/>
                                             <title
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
