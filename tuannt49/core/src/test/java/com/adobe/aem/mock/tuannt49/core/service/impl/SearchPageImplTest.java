@@ -3,10 +3,13 @@ package com.adobe.aem.mock.tuannt49.core.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.jcr.Session;
+
 import com.day.cq.search.QueryBuilder;
 import com.day.cq.wcm.api.Page;
 
 import org.apache.sling.api.resource.LoginException;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,6 +32,12 @@ public class SearchPageImplTest {
     @Mock
     private ResourceResolverFactory resolverFactory;
 
+    @Mock
+    private ResourceResolver resolver;
+
+    @Mock
+    private Session session;
+
     @InjectMocks
     private SearchPageImpl searchPageImpl;
 
@@ -48,11 +57,10 @@ public class SearchPageImplTest {
 
     @Test
     void testSearchByTemplate() throws LoginException {
-        // ResourceResolver resourceResolver = context.resourceResolver();
-        // Session session = resourceResolver.adaptTo(Session.class);
+        // resolver = context.resourceResolver();
+        // session = resolver.adaptTo(Session.class);
 
-        // when(resolverFactory.getResourceResolver(anyMap())).thenReturn(resourceResolver);
-        // when(resourceResolver.adaptTo(Session.class)).thenReturn(session);
+        // when(resolverFactory.getResourceResolver(anyMap())).thenReturn(resolver);
 
         // List<Page> actual = searchPageImpl.searchByTemplate("template", 0, 2);
     }
